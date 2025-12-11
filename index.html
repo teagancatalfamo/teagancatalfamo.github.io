@@ -1,0 +1,160 @@
+<!--I used lab 9 as a base for my code to create my blog and adjusted the content and styling to fit. I used Google AI to help me 
+confirm I fulfilled the requirements for the project and I used it to help me create the travel count feature -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tabs Demo</title>
+    <link rel="stylesheet" href="project4.css">
+</head>
+<body>
+    <div class="container">
+        <img src ="/Pictures/profilepic.jpeg" alt = "Profile Picture" width="210" height="200">
+        <h1>About Me Blog</h1>
+        
+        <div class="tabs">
+            <button class="tab active" data-tab="home">Home</button>
+            <button class="tab" data-tab="Favorite Movies">Favorite Movies</button>
+            <button class="tab" data-tab="Favorite Music">Favorite Music</button>
+            <button class="tab" data-tab="Hobbies">Hobbies</button>
+            <button class="tab" data-tab="My Travels">My Travels</button>
+        </div>
+
+        <div class="tab-content active" id="home">
+            <h2>Home</h2>
+            <p>Hi! My name is Teagan and this is my blog! By switching through the tabs you can 
+            learn about some of my favorite movies and music as well as my hobbies and where I've travelled! Enjoy!</p>
+        </div>
+
+        <div class="tab-content" id="Favorite Movies">
+            <h2>Favorite Movies</h2>
+            <dl>
+                <dd>She's the Man</dd>
+                <dd>Little Shop of Horrors</dd>
+                <dd>Chicago</dd>
+                <dd>Death Becomes Her</dd>
+                <dd>Bottoms</li>
+                <dd>One Hundred and One Dalmations</dd>
+                <dd>Jurassic Park</dd>
+                <dd>Beetlejuice</dd>
+                <dd>Guardians of the Galaxy</dd>
+            </dl>
+        </div>
+
+        <div class="tab-content" id="Favorite Music">
+            <h2>Favorite Music</h2>
+            <p>Some of my favorite albums!</p>
+            <br>
+            <dl>
+                <dd>By and By- Caamp</dd>
+                <dd>Strange Trails- Lord Huron</dd>
+                <dd>My Head is an Animal- Of Monsters and Men</dd>
+                <dd>Stick Season (Forever)- Noah Kahan</dd>
+            </dl>
+            <br>
+            <p>Some of my favorite songs!</p>
+            <br>
+            <dl>
+                <dd>Brandy (You're a Fine Girl)- Looking Glass</dd>
+                <dd>No Sleep- Caamp</dd>
+                <dd>On & On & On- Caamp</dd>
+                <dd>The Stable Song- Gregory Alan Isakov</dd>
+                <dd>She lit a Fire- Lord Huron</dd>
+                <dd>Mountain Sound- Of Monsters and Men</dd>
+            </dl>
+        </div>
+
+        <div class="tab-content" id="Hobbies">
+            <h2>Hobbies</h2>
+            <P>I love to...</P>
+            <br>
+            <dl>
+                <dd>Watch movies</dd>
+                <dd>Read</dd>
+                <dd>Travel</dd>
+                <dd>Embroider</dd>
+                <dd>Explore Nature</dd>
+            </dl>
+        </div>
+
+        <div class="tab-content" id="My Travels">
+            <h2>My Travels</h2>
+            <p>Some of my favorite places I've travelled! <span id="travel-count"></span> unique locations!</p>
+            <br>
+            <img src ="Pictures/NYC1.JPG" alt = "New York City" width="300" height="200">
+            <img src ="Pictures/NYC3.jpg" alt = "New York City 3" width="300" height="200">
+            <br>
+            <img src ="Pictures/NYC2.jpg" alt = "New York City 2" width="150" height="200">
+            <br>
+            <br>
+            <dl>
+                <dd>New York City</dd>
+            </dl>
+            <br>
+            <img src ="Pictures/Ireland1.jpg" alt = "Ireland" width="175" height="200">
+            <img src ="Pictures/Ireland2.jpg" alt = "Ireland 2" width="175" height="200">
+            <img src ="Pictures/Ireland3.jpg" alt = "Ireland 3" width="175" height="200">
+            <br>
+            <br>
+            <dl>
+                <dd>Ireland</dd>
+            </dl>
+            <br>
+            <img src ="Pictures/Scotland1.jpg" alt = "Scotland" width="175" height="200">
+            <img src ="/Pictures/Scotland3.jpg" alt = "Scotland 3" width="175" height="200">
+            <img src ="Pictures/Scotland2.jpg" alt = "Scotland 2" width="175" height="200">
+            <br>
+            <br>
+            <dl>
+                <dd>Scotland</dd>
+            </dl>
+            <br>
+            <img src ="Pictures/London1.jpg" alt = "London" width="175" height="200">
+            <img src ="Pictures/London2.jpg" alt = "London 2" width="175" height="200">
+            <br>
+            <br>
+            <dl>
+                <dd>London</dd>
+            </dl>
+            <br>
+            <img src ="Pictures/Peru1.jpg" alt = "Peru" width="300" height="200">
+            <img src ="Pictures/Peru2.jpg" alt = "Peru 2" width="175" height="200">
+            <br>
+            <br>
+            <dl>
+                <dd>Peru</dd>
+            </dl>
+            <br>
+            <img src ="Pictures/Diego1.jpg" alt = "San Diego" width="150" height="200">
+            <img src ="Pictures/Diego2.jpg" alt = "San Diego 2" width="175" height="200">
+            <img src ="Pictures/Diego3.jpg" alt = "San Diego 3" width="150" height="200">
+            <br>
+            <br>
+            <dl>
+                <dd>San Diego</dd>
+            </dl>
+            <br>
+            <img src ="Pictures/Olympic1.jpg" alt = "Olympic National Park" width="175" height="200">
+            <img src ="Pictures/Olympic3.jpg" alt = "Olympic National Park 3" width="175" height="200">
+            <img src ="Pictures/Olympic4.jpg" alt = "Olympic National Park 4" width="175" height="200">
+            <br>
+            <br>
+            <dl>
+                <dd>Olympic National Park</dd>
+            </dl>
+            <br>
+            <img src ="Pictures/Arches1.jpg" alt = "Arches National Park" width="175" height="200">
+            <img src ="Pictures/Arches2.jpg" alt = "Arches National Park 2" width="175" height="200">
+            <br>
+            <br>
+            <dl>
+                <dd>Arches National Park & Canyonlands</dd>
+            </dl>
+        </div>
+    </div>
+
+    <script src="project4.js"></script>
+</body>
+</html>
